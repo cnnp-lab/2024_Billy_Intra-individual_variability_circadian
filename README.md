@@ -3,7 +3,13 @@
 This is the code accompanying _"More variable circadian rhythms in epilepsy captured by long-term heart rate recordings from wearable sensors"_ (Smith et. al, 2024), which is currently in preprint @ https://doi.org/10.48550/arXiv.2411.04634.
 
 This code specifically has been run with Python 3.11, however should be compatible with any reasonably modern Python 3 version. 
-Please see requirements.txt for a list of the required packages and their dependencies. We recommend creating a virtual environment using this file. 
+Please see requirements.txt for a list of the required packages and their dependencies. 
+
+We recommend creating a virtual environment and then installing the requirements before running this code:
+- `python -m venv venv`
+- `source venv/bin/activate`
+- `pip install -r requirements.txt`
+
 Please do not hesitate to get in touch at b.smith16@newcastle.ac.uk with any technical issues, questions or concerns. 
 
 There are two main scripts:
@@ -12,9 +18,9 @@ There are two main scripts:
      - we are unable to share the raw data used to produce this, but see the script below
   2. produces figures 3-5 (results 1-3) contained in the publication.
   
-- _intra_individual_variability_pipeline.py_
+- _intra_individual_variability_pipeline.py_ (**WIP**)
   - this is a simplified reproduction of the pipeline we used to calculate the table above, over simulated data.
-  - you can also pass your own time-series data to this method. 
+  - this uses some generated synthetic data (see _generate_synthetic_data.py_), but **you can also pass your own time-series data to this method**. 
   
   
 

@@ -376,7 +376,7 @@ if __name__ == "__main__":
 	# initialise
 	plt.rc("font", family="helvetica")
 	plt.rcParams.update({'font.size': 8, })
-	os.makedirs("figures", exist_ok=True)
+	os.makedirs("../figures", exist_ok=True)
 
 	# load in dataframe of circadian property mean/std per segment across all participants
 	segments_df = pd.read_csv("../data/segments_df.csv", index_col=0)
